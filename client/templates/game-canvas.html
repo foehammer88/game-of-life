@@ -1,0 +1,52 @@
+<template name="gameCanvas">
+  <div class="container">
+    <div class="pull-left">
+      <div class="form-inline">
+        <div class="form-group">
+          <button id="newYear" class="btn btn-default">New Year</button>
+        </div>
+        <div class="form-group">
+          <button id="run" class="btn btn-default">Run</button>
+        </div>
+        <div class="form-group">
+          <button id="reset" class="btn btn-default">Reset</button>
+        </div>
+        <div class="form-group">
+          <button id="clear" class="btn btn-default">Clear</button>
+        </div>
+        <div class="form-group">
+          <button id="generateHash" class="btn btn-default">Generate Seed</button>
+        </div>
+      </div>
+    </div>
+    <div class="pull-right">
+      <div class="form-inline">
+        <div class="form-group">
+          <label for="sizeX" class="text">width:</label>
+          <input type="text" class="form-control size-input" id="sizeX" value="{{xSize}}">
+        </div>
+        <div class="form-group">
+          <label for="sizeY" class="text">height:</label>
+          <input type="text" class="form-control size-input" id="sizeY" value="{{ySize}}">
+        </div>
+        <button id="resize" class="btn btn-default">Resize</button>
+      </div>
+    </div>
+    <div class="text-center">
+      <p class="text large">Year {{year}}</p>
+    </div>
+  </div>
+
+  <div class="container center-block">
+    <canvas id="gameOfCanvas"></canvas>
+  </div>
+
+  <div class="container">
+    <p class="seed text">Seed:</p>
+    <div>
+      <textarea id="seedInput" class="text-area" rows="4" cols="40">{{seed}}</textarea>
+      <br>
+      <button id="seedGrid" class="btn btn-default">Seed</button>
+    </div>
+  </div>
+</template>

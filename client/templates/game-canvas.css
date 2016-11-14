@@ -1,0 +1,30 @@
+#gameOfCanvas {
+    background-color: #666;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#run {
+    width: 65px;
+}
+
+.seed {
+    word-wrap: break-word;
+}
+
+.text {
+    color: #eee !important;
+}
+
+.large {
+    font-size: 16px;
+}
+
+.text-area {
+    font-family: 'Menlo', monospace;
+    font-size: 12px;
+}
+
+.size-input {
+    max-width: 70px;
+}
